@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta Tags -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no">
+  <title>My Account</title>
+
+  <!-- Font CSS -->
+  <link href="css/font.css" type="text/css" rel="stylesheet" />
+  <!-- Bootstrap -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link href="css/screen.css" rel="stylesheet" />
+  <link href="css/jqtransform.css" rel="stylesheet" />
+  <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+  <!-- jQuery library -->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/jquery.jqtransform.js"></script>
+  <!-- Bootstrap -->
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/script.js"></script>
+</head>
+<body>
+<aside class="nav-aside">
+  <nav class="nav">
+    <ul>      
+      <li><a href="dashboard.html" class="icons icon-dashboard"><span class="mains"><i></i><span>Dashboard</span></span></a></li>
+      <li class="current"><a href="javascript:;" class="icons icon-my-account has-sub-nav"><span class="mains"><i></i><span>My Account</span></span></a></li>
+      <li><a href="javascript:;" class="icons icon-my-projects"><span class="mains"><i></i><span>My Projects</span></span></a></li>
+      <li><a href="javascript:;" class="icons icon-my-cart"><span class="mains"><i></i><span>My Cart</span></span></a></li>
+      <li><a href="knowledge-base.html" class="icons icon-knowledge-base"><span class="mains"><i></i><span>Knowledge Base</span></span></a></li>
+      <li><a href="support.html" class="icons icon-support"><span class="mains"><i></i><span>Support</span></span></a></li>
+      <li><a href="login.html" class="icons icon-logout"><span class="mains"><i></i><span>Logout</span></span></a></li>
+    </ul>
+  </nav>
+  <nav>
+    <ul class="sub-nav hide">
+      <li><a href="my-account.html?tabName=order-history-contents">Order History</a></li>
+      <li><a href="my-account.html?tabName=payment-history-contents">Payment History</a></li>
+      <li><a href="my-account.html?tabName=open-invoices-contents">Open Invoices</a></li>
+      <li><a href="javascript:;">My Surveys</a></li>
+      <li><a href="javascript:;">Account Reps</a></li>
+      <li><a href="javascript:;">Personalization</a></li>
+      <li><a href="my-profile.html?tabName=my-notifications-contents">Notifications</a></li>
+      <li><a href="my-profile.html?tabName=contact-detail-contents">Contact Info</a></li>
+    </ul>
+  </nav>
+</aside>
+<!-- end .nav-aside -->
+
+<div class="wrapper">
+  <header class="header">
+    <div class="mobile-header">
+      <a href="javascript:;" class="icon-btn-menu"></a>
+      <a href="javascript:;" class="icon-btn-search"></a>
+      <a href="javascript:;" class="icon-btn-alerts"><span class="red-round">3</span></a>
+      <h2 class="title-text">Dashboard</h2>
+    </div>
+    <!-- end .mobile-header -->
+    <div class="container-fluid">
+      <div class="row">
+      
+        <div class="col-xs-3 logo-box">
+          <div class="logo pull-left">
+            <span></span>
+          </div>
+          <div class="texts pull-left">
+            <h1>GE Power and Water</h1>
+            <p>Water and Process Technologies</p>
+          </div>
+        </div>
+        <!-- end .logo-box -->
+        
+        <div class="col-xs-6 search-box">
+          <div class="search-bar">
+            <span class="input-box"><input name="" type="text" placeholder="Search" class="search-input"></span>
+            <span class="input-tip-txt hide">Ultrapure and Drinking Water TOC Analyzers</span>
+            <a href="search-result.html" class="btn-search"></a>
+          </div>
+          <!-- end .search-bar -->
+          <div class="search-tip hide">
+            <div class="row">
+              <h3>Applications (1)</h3>
+              <p>
+                <span class="blue-link"><a href="javascript:;">Water Quality Monitoring and Testing</a></span>
+              </p>
+            </div>
+            <!-- end .row -->
+            <div class="row">
+              <h3>Products (1)</h3>
+              <p>
+                <span class="blue-link"><a href="javascript:;">Ultrapure and Drinking Water TOC Analyzers</a></span>
+              </p>
+            </div>
+            <!-- end .row -->
+            <div class="row">
+              <h3>Industry (2)</h3>
+              <p>
+                <span class="blue-link"><a href="javascript:;">Pharmaceutical Industry Solutions</a></span>
+                <span class="blue-link"><a href="javascript:;">Municipal Water Treatment Solutions</a></span>
+              </p>
+            </div>
+            <!-- end .row -->
+            <div class="row">
+              <h3>Transactions (3)</h3>
+              <p class="spacing-down">
+                <span class="blue-link"><a href="javascript:;">Order #123456</a></span>
+                <span class="blue-link"><a href="javascript:;">Invoice #0097476809</a></span>
+                <span class="blue-link"><a href="javascript:;">Shipment #123456</a></span>
+              </p>
+            </div>
+            <!-- end .row -->
+            <div class="btn-row">
+              <a href="search-result.html" class="orange-link">View More</a>
+            </div>
+            <!-- end .btn-row -->          
+          </div>
+          <!-- end .search-tip -->
+        </div>
+        <!-- end .search-box -->
+        
+        <div class="col-xs-3 user-box">
+          <div class="pull-right">
+            <div class="alerts pull-left">
+              <a href="javascript:;" class="icon-alerts"><span class="red-round">7</span><i></i></a>
+              <div class="alerts-contents hide">
+                <span class="arrow-up"></span>
+                <div class="boxs">
+                  <div class="row">
+                    <i class="red-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Shipment #0097476809</a></span> is late
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="row">
+                    <i class="orange-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="row">
+                    <i class="orange-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Order #12344</a></span> delayed
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="row">
+                    <i class="green-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="row">
+                    <i class="green-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="btn-row">
+                    <a href="javascript:;" class="orange-link view-more-alerts-button">View More</a>
+                  </div>
+                  <!-- end .btn-row --> 
+                </div>
+              </div>
+              <!-- end .alerts-contents -->
+            </div>
+            <!-- end .alerts -->
+            <div class="user pull-left">
+              <a href="my-profile.html" class="user-link-group">
+                <img src="i/portrait-40x40.png"  class="portrait-img pull-left" alt="portrait"/>
+                <span class="portrait-text pull-left">
+                  <span class="txt">Welcome</span>
+                  <span class="name">George</span>
+                </span>
+              </a>
+            </div>
+            <!-- end .user -->          
+          </div>
+        </div>
+        <!-- end .user-box -->
+        
+        <aside class="alerts-full-mode hide">
+          <h2 class="titles">
+            <strong class="pull-left">Alarms (7)</strong>
+            <a href="javascript:;" class="icon-close-btn pull-right"></a>
+          </h2>
+          <div class="boxs">
+            <div class="blue-bar">
+              <a href="javascript:;" class="arrow-down pull-right"><span class="txt">Latest</span><i></i></a>
+            </div>
+            <div class="scroll-box">
+              <div class="scroll-main">
+                <div class="row">
+                  <i class="red-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Shipment #0097476809</a></span> is late 
+                    <span class="gray-block">3m ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="orange-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span> 
+                    <span class="gray-block">45m ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="orange-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Order #12344</a></span> delayed
+                    <span class="gray-block">2h ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="green-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    <span class="gray-block">3h ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="green-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    <span class="gray-block">6h ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="red-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Shipment #0097476788</a></span> is late
+                    <span class="gray-block">Apr 26, 2015. 11:23 am</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="red-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Shipment #0097476765</a></span> is late 
+                    <span class="gray-block">Apr 26, 2015. 9:47 am</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- end .alerts-full-mode -->
+        
+      </div>
+    </div>
+  </header>
+  <!-- end .header -->
+  
+  <div class="contents">     
+    
+    <div class="titles">
+      <h2>Orders</h2>
+      <nav class="tab-nav">
+        <ul>
+          <li class="current" data-tab-class="order-history-contents"><a href="javascript:;" class="width140">Order History</a></li>
+          <li data-tab-class="payment-history-contents"><a href="javascript:;" class="width140">Payment History</a></li>
+          <li data-tab-class="open-invoices-contents"><a href="javascript:;" class="width140">Open Invoices</a></li>
+        </ul>
+      </nav>
+      <!-- end .tab-nav -->
+      <div class="right-info right-info-amount-detail hide">
+        <div class="module pull-left">
+          <p>Open Balance (USD)</p>
+          <h3>$75,432</h3>
+        </div>
+        <!-- end .module -->
+        <div class="module pull-left">
+          <p>Past due (USD)</p>
+          <h3 class="red-txt">$12,000</h3>
+        </div>
+        <!-- end .module -->
+      </div>
+      <!-- end .right-info -->
+    </div>
+    <!-- end .titles -->
+    
+    <div class="order-history-contents tab-content-general">
+      <dl class="data-table-contents">
+        <dt>
+          <span class="icon-btn"></span>
+          <span class="order">Order #</span>
+          <span class="status">Status</span>
+          <span class="orderplaced">Order Placed<a href="javascript:;" class="sorting-dwon-btn"></a></span>
+          <span class="orderby">Ordered By</span>
+          <span class="type">Type</span>
+          <span class="ordertotal">Order Total</span>
+          <span class="edd">EDD<a href="javascript:;" class="sorting-dwon-btn"></a></span>
+          <span class="setting"></span>
+        </dt>
+        <dd>
+          <div class="line-box">
+            <span class="icon-btn"><a class="plus" href="javascript:;"></a></span>
+            <span class="order"><a href="javascript:;">523467</a></span>
+            <span class="status fir"><i></i></span>
+            <span class="orderplaced">Apr 23, 2015</span>
+            <span class="orderby">George Scott</span>
+            <span class="type">Digital</span>
+            <span class="ordertotal">$ 1,245.67</span>
+            <span class="edd">Apr 27, 2015</span>
+            <span  class="setting"><a href="javascript:;"><i></i></a></span>
+            <div class="ordersubmenu hide">
+              <span class="arrow-up"><i></i></span>
+              <ul>
+                <li><a href="javascript:;" class="icon-blue-raise-case"><i></i>Raise Case</a></li>
+                <li><a href="javascript:;" class="icon-blue-re-order"><i></i>Re-Order</a></li>
+                <li><a href="javascript:;" class="icon-blue-track-order"><i></i>Track Order</a></li>
+                <li><a href="javascript:;" class="icon-blue-chatter"><i></i>Chatter</a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="sub-rows hide">
+            <li class="title">
+              <span class="material">Material</span>
+              <span class="quantity">Quantity</span>
+              <span class="description">Description</span>
+              <span class="action">Action</span>
+              <span class="factsheet"></span>
+            </li>
+            <li>
+              <span class="material">Thin-Film Composite</span>
+              <span class="quantity">50 units</span>
+              <span class="description">Membrane filter</span>
+              <a class="action" href="javascript:;"><i></i><em>MSDS</em></a>
+              <a class="factsheet" href="javascript:;"><i></i><em>Fact<br>Sheet</em></a>
+            </li>
+            <li>
+              <span class="material">Aenean nec sapien massa</span>
+              <span class="quantity">30 units</span>
+              <span class="description">Quisque luctus neque</span>
+              <a class="action" href="javascript:;"><i></i><em>MSDS</em></a>
+              <a class="factsheet" href="javascript:;"><i></i><em>Fact<br>Sheet</em></a>
+            </li>
+          </ul>
+        </dd>
+        <dd>
+          <div class="line-box">
+            <span class="icon-btn"><a class="plus" href="javascript:;"></a></span>
+            <span class="order"><a href="javascript:;">523462</a></span>
+            <span class="status sec"><i></i></span>
+            <span class="orderplaced">Apr 20, 2015</span>
+            <span class="orderby">John Smith</span>
+            <span class="type">Digital</span>
+            <span class="ordertotal">$ 2,543.12</span>
+            <span class="edd">Apr 24, 2015</span>
+            <span  class="setting"><a href="javascript:;"><i></i></a></span>
+            <div class="ordersubmenu hide">
+              <span class="arrow-up"><i></i></span>
+              <ul>
+                <li><a href="javascript:;" class="icon-blue-raise-case"><i></i>Raise Case</a></li>
+                <li><a href="javascript:;" class="icon-blue-re-order"><i></i>Re-Order</a></li>
+                <li><a href="javascript:;" class="icon-blue-track-order"><i></i>Track Order</a></li>
+                <li><a href="javascript:;" class="icon-blue-chatter"><i></i>Chatter</a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="sub-rows hide">
+            <li class="title">
+              <span class="material">Material</span>
+              <span class="quantity">Quantity</span>
+              <span class="description">Description</span>
+              <span class="action">Action</span>
+              <span class="factsheet"></span>
+            </li>
+            <li>
+              <span class="material">Thin-Film Composite</span>
+              <span class="quantity">50 units</span>
+              <span class="description">Membrane filter</span>
+              <a class="action" href="javascript:;"><i></i><em>MSDS</em></a>
+              <a class="factsheet" href="javascript:;"><i></i><em>Fact<br>Sheet</em></a>
+            </li>
+            <li>
+              <span class="material">Aenean nec sapien massa</span>
+              <span class="quantity">30 units</span>
+              <span class="description">Quisque luctus neque</span>
+              <a class="action" href="javascript:;"><i></i><em>MSDS</em></a>
+              <a class="factsheet" href="javascript:;"><i></i><em>Fact<br>Sheet</em></a>
+            </li>
+          </ul>
+        </dd>
+        <dd>
+          <div class="line-box">
+            <span class="icon-btn"><a class="plus" href="javascript:;"></a></span>
+            <span class="order"><a href="javascript:;">523459</a></span>
+            <span class="status fou"><i></i></span>
+            <span class="orderplaced">Apr 19, 2015</span>
+            <span class="orderby">Anna Parker</span>
+            <span class="type">Digital</span>
+            <span class="ordertotal">$ 789.00</span>
+            <span class="edd">Apr 23, 2015</span>
+            <span class="setting"><a href="javascript:;"><i></i></a></span>
+            <div class="ordersubmenu hide">
+              <span class="arrow-up"><i></i></span>
+              <ul>
+                <li><a href="javascript:;" class="icon-blue-raise-case"><i></i>Raise Case</a></li>
+                <li><a href="javascript:;" class="icon-blue-re-order"><i></i>Re-Order</a></li>
+                <li><a href="javascript:;" class="icon-blue-track-order"><i></i>Track Order</a></li>
+                <li><a href="javascript:;" class="icon-blue-chatter"><i></i>Chatter</a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="sub-rows hide">
+            <li class="title">
+              <span class="material">Material</span>
+              <span class="quantity">Quantity</span>
+              <span class="description">Description</span>
+              <span class="action">Action</span>
+              <span class="factsheet"></span>
+            </li>
+            <li>
+              <span class="material">Thin-Film Composite</span>
+              <span class="quantity">50 units</span>
+              <span class="description">Membrane filter</span>
+              <a class="action" href="javascript:;"><i></i><em>MSDS</em></a>
+              <a class="factsheet" href="javascript:;"><i></i><em>Fact<br>Sheet</em></a>
+            </li>
+            <li>
+              <span class="material">Aenean nec sapien massa</span>
+              <span class="quantity">30 units</span>
+              <span class="description">Quisque luctus neque</span>
+              <a class="action" href="javascript:;"><i></i><em>MSDS</em></a>
+              <a class="factsheet" href="javascript:;"><i></i><em>Fact<br>Sheet</em></a>
+            </li>
+          </ul>
+        </dd>
+        <dd>
+          <div class="line-box">
+            <span class="icon-btn"><a class="plus" href="javascript:;"></a></span>
+            <span class="order"><a href="javascript:;">523455</a></span>
+            <span class="status fou"><i></i></span>
+            <span class="orderplaced">Apr 17, 2015</span>
+            <span class="orderby">George Scott</span>
+            <span class="type">Digital</span>
+            <span class="ordertotal">$ 1,245.67</span>
+            <span class="edd">Apr 20, 2015</span>
+            <span class="setting"><a href="javascript:;"><i></i></a></span>
+            <div class="ordersubmenu hide">
+              <span class="arrow-up"><i></i></span>
+              <ul>
+                <li><a href="javascript:;" class="icon-blue-raise-case"><i></i>Raise Case</a></li>
+                <li><a href="javascript:;" class="icon-blue-re-order"><i></i>Re-Order</a></li>
+                <li><a href="javascript:;" class="icon-blue-track-order"><i></i>Track Order</a></li>
+                <li><a href="javascript:;" class="icon-blue-chatter"><i></i>Chatter</a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="sub-rows hide">
+            <li class="title">
+              <span class="material">Material</span>
+              <span class="quantity">Quantity</span>
+              <span class="description">Description</span>
+              <span class="action">Action</span>
+              <span class="factsheet"></span>
+            </li>
+            <li>
+              <span class="material">Thin-Film Composite</span>
+              <span class="quantity">50 units</span>
+              <span class="description">Membrane filter</span>
+              <a class="action" href="javascript:;"><i></i><em>MSDS</em></a>
+              <a class="factsheet" href="javascript:;"><i></i><em>Fact<br>Sheet</em></a>
+            </li>
+            <li>
+              <span class="material">Aenean nec sapien massa</span>
+              <span class="quantity">30 units</span>
+              <span class="description">Quisque luctus neque</span>
+              <a class="action" href="javascript:;"><i></i><em>MSDS</em></a>
+              <a class="factsheet" href="javascript:;"><i></i><em>Fact<br>Sheet</em></a>
+            </li>
+          </ul>
+        </dd>
+        <dd>
+          <div class="line-box">
+            <span class="icon-btn"><a class="plus" href="javascript:;"></a></span>
+            <span class="order"><a href="javascript:;">523455</a></span>
+            <span class="status six"><i></i></span>
+            <span class="orderplaced">Apr 17, 2015</span>
+            <span class="orderby">George Scott</span>
+            <span class="type">Digital</span>
+            <span class="ordertotal">$ 1,245.67</span>
+            <span class="edd">Apr 20, 2015</span>
+            <span class="setting"><a href="javascript:;"><i></i></a></span>
+            <div class="ordersubmenu hide">
+              <span class="arrow-up"><i></i></span>
+              <ul>
+                <li><a href="javascript:;" class="icon-blue-raise-case"><i></i>Raise Case</a></li>
+                <li><a href="javascript:;" class="icon-blue-re-order"><i></i>Re-Order</a></li>
+                <li><a href="javascript:;" class="icon-blue-track-order"><i></i>Track Order</a></li>
+                <li><a href="javascript:;" class="icon-blue-chatter"><i></i>Chatter</a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="sub-rows hide">
+            <li class="title">
+              <span class="material">Material</span>
+              <span class="quantity">Quantity</span>
+              <span class="description">Description</span>
+              <span class="action">Action</span>
+              <span class="factsheet"></span>
+            </li>
+            <li>
+              <span class="material">Thin-Film Composite</span>
+              <span class="quantity">50 units</span>
+              <span class="description">Membrane filter</span>
+              <a class="action" href="javascript:;"><i></i><em>MSDS</em></a>
+              <a class="factsheet" href="javascript:;"><i></i><em>Fact<br>Sheet</em></a>
+            </li>
+            <li>
+              <span class="material">Aenean nec sapien massa</span>
+              <span class="quantity">30 units</span>
+              <span class="description">Quisque luctus neque</span>
+              <a class="action" href="javascript:;"><i></i><em>MSDS</em></a>
+              <a class="factsheet" href="javascript:;"><i></i><em>Fact<br>Sheet</em></a>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <!-- end .order-history-contents -->
+    
+    <div class="payment-history-contents tab-content-general hide">
+      <dl class="data-table-contents">
+        <dt>
+          <span class="order">Order #</span>
+          <span class="invoice">Invoice#</span>
+          <span class="invoicedate">Invoice Date<a href="javascript:;" class="sorting-dwon-btn"></a></span>
+          <span class="invoiceamount">Invoice Amount</span>
+          <span class="duedate">Due Date<a href="javascript:;" class="sorting-dwon-btn"></a></span>
+          <span class="status">Status<a href="javascript:;" class="sorting-dwon-btn status-sort"></a></span>
+          <span class="action">Action</span>
+          <span class="raise"></span>
+        </dt>
+        <dd>
+          <span class="order"><a href="javascript:;">523467</a></span>
+          <span class="invoice"><a href="javascript:;">0097476809</a></span>
+          <span class="invoicedate">Apr 20, 2015</span>
+          <span class="invoiceamount">$ 1,245.67</span>
+          <span class="duedate">Apr 25, 2015</span>
+          <span class="status"><i class="red">Past Due</i><i class="red">+5 days</i></span>
+          <span class="action"><a href="javascript:;"><i></i>Payment</a></span>
+          <span class="raise"><a href="javascript:;"><i></i><em>Raise<br>Case</em></a></span>
+        </dd>
+        <dd>
+          <span class="order"><a href="javascript:;">523467</a></span>
+          <span class="invoice"><a href="javascript:;">0097476809</a></span>
+          <span class="invoicedate">Apr 20, 2015</span>
+          <span class="invoiceamount">$ 1,245.67</span>
+          <span class="duedate">Apr 24, 2015</span>
+          <span class="status"><i>Open</i></span>
+          <span class="action"><a href="javascript:;"><i></i>Payment</a></span>
+          <span class="raise"><a href="javascript:;"><i></i><em>Raise<br>Case</em></a></span>
+        </dd>
+        <dd>
+          <span class="order"><a href="javascript:;">523462</a></span>
+          <span class="invoice"><a href="javascript:;">0097476809</a></span>
+          <span class="invoicedate">Apr 20, 2015</span>
+          <span class="invoiceamount">$ 1,245.67</span>
+          <span class="duedate">Apr 24, 2015</span>
+          <span class="status"><i class="green">Paid</i><i>Apr 21,2015</i></span>
+          <span class="action"><a href="javascript:;"><i></i>Payment</a></span>
+          <span class="raise"><a href="javascript:;"><i></i><em>Raise<br>Case</em></a></span>
+        </dd>
+        <dd>
+          <span class="order"><a href="javascript:;">523459</a></span>
+          <span class="invoice"><a href="javascript:;">0097476809</a></span>
+          <span class="invoicedate">Apr 20, 2015</span>
+          <span class="invoiceamount">$ 1,245.67</span>
+          <span class="duedate">Apr 24, 2015</span>
+          <span class="status"><i class="green">Paid</i><i>Apr 21,2015</i></span>
+          <span class="action"><a href="javascript:;"><i></i>Payment</a></span>
+          <span class="raise"><a href="javascript:;"><i></i><em>Raise<br>Case</em></a></span>
+        </dd>
+      </dl>
+    </div>
+    <!-- end .payment-history-contents -->
+    
+    <div class="open-invoices-contents tab-content-general hide">
+      <dl class="data-table-contents">
+        <dt>
+          <span class="icon-btn"></span>
+          <span class="invoicec">Invoicec #</span>
+          <span class="invoicedate">Invoice Date<a href="javascript:;" class="sorting-dwon-btn"></a></span>
+          <span class="invoiceamount">Invoice Amount</span>
+          <span class="blance">Blance</span>
+          <span class="duedate">Due Date<a href="javascript:;" class="sorting-dwon-btn"></a></span>
+          <span class="setting"></span>
+        </dt>
+        <dd>
+          <div class="line-box plus">
+            <span class="icon-btn"><a href="javascript:;"></a></span>
+            <span class="invoicec"><a href="javascript:;">0097476809</a></span>
+            <span class="invoicedate">Apr 23, 2015</span>
+            <span class="invoiceamount">$ 1,245.67</span>
+            <span class="blance">$ 1,245.67</span>
+            <span class="duedate">Apr 27, 2015</span>
+            <span class="setting"><a href="javascript:;"><i></i></a></span>
+            <div class="ordersubmenu hide">
+              <span class="arrow-up"><i></i></span>
+              <ul>
+                <li><a href="javascript:;" class="icon-blue-payment"><i></i>Payment</a></li>
+                <li><a href="javascript:;" class="icon-blue-raise-case"><i></i>Raise Case</a></li>
+                <li><a href="javascript:;" class="icon-blue-track-order"><i></i>Track Order</a></li>
+                <li><a href="javascript:;" class="icon-blue-chatter"><i></i>Chatter</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="hs_bg hide">
+            <ul class="yes">
+              <li class="title">
+                <span class="ordernum"><a href="javascript:;" class="blue-link"><em>Order<br>#529425</em></a></span>
+                <span class="item">Item</span>
+                <span class="material">Material</span>
+                <span class="quantity">Quantity</span>
+                <span class="descriptions">Description</span>
+                <span class="total">Total</span>
+                <span class="action">Action</span>
+                <span class="factsheet"></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+            </ul>
+            <ul class="no">
+              <li class="title">
+                <span class="ordernum"><a href="javascript:;" class="blue-link"><em>Order<br>#529425</em></a></span>
+                <span class="item">Item</span>
+                <span class="material">Material</span>
+                <span class="quantity">Quantity</span>
+                <span class="descriptions">Description</span>
+                <span class="total">Total</span>
+                <span class="action">Action</span>
+                <span class="factsheet"></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+            </ul>
+          </div>
+        </dd>
+        <dd>
+          <div class="line-box plus">
+            <span class="icon-btn"><a href="javascript:;"></a></span>
+            <span class="invoicec"><a href="javascript:;">0097476809</a></span>
+            <span class="invoicedate">Apr 20, 2015</span>
+            <span class="invoiceamount">$ 1,245.67</span>
+            <span class="blance">$ 1,245.67</span>
+            <span class="duedate">Apr 24, 2015</span>
+            <span class="setting"><a href="javascript:;"><i></i></a></span>
+            <div class="ordersubmenu hide">
+              <span class="arrow-up"><i></i></span>
+              <ul>
+                <li><a href="javascript:;" class="icon-blue-payment"><i></i>Payment</a></li>
+                <li><a href="javascript:;" class="icon-blue-raise-case"><i></i>Raise Case</a></li>
+                <li><a href="javascript:;" class="icon-blue-track-order"><i></i>Track Order</a></li>
+                <li><a href="javascript:;" class="icon-blue-chatter"><i></i>Chatter</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="hs_bg hide">
+            <ul class="yes">
+              <li class="title">
+                <span class="ordernum"><a href="javascript:;" class="blue-link"><em>Order<br>#529425</em></a></span>
+                <span class="item">Item</span>
+                <span class="material">Material</span>
+                <span class="quantity">Quantity</span>
+                <span class="descriptions">Description</span>
+                <span class="total">Total</span>
+                <span class="action">Action</span>
+                <span class="factsheet"></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+            </ul>
+            <ul class="no">
+              <li class="title">
+                <span class="ordernum"><a href="javascript:;" class="blue-link"><em>Order<br>#529425</em></a></span>
+                <span class="item">Item</span>
+                <span class="material">Material</span>
+                <span class="quantity">Quantity</span>
+                <span class="descriptions">Description</span>
+                <span class="total">Total</span>
+                <span class="action">Action</span>
+                <span class="factsheet"></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+            </ul>
+          </div>
+        </dd>
+        <dd>
+          <div class="line-box plus">
+            <span class="icon-btn"><a href="javascript:;"></a></span>
+            <span class="invoicec"><a href="javascript:;">0097476809</a></span>
+            <span class="invoicedate">Apr 20, 2015</span>
+            <span class="invoiceamount">$ 1,245.67</span>
+            <span class="blance">$ 1,245.67</span>
+            <span class="duedate">Apr 24, 2015</span>
+            <span class="setting"><a href="javascript:;"><i></i></a></span>
+            <div class="ordersubmenu hide">
+              <span class="arrow-up"><i></i></span>
+              <ul>
+                <li><a href="javascript:;" class="icon-blue-payment"><i></i>Payment</a></li>
+                <li><a href="javascript:;" class="icon-blue-raise-case"><i></i>Raise Case</a></li>
+                <li><a href="javascript:;" class="icon-blue-track-order"><i></i>Track Order</a></li>
+                <li><a href="javascript:;" class="icon-blue-chatter"><i></i>Chatter</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="hs_bg hide">
+            <ul class="yes">
+              <li class="title">
+                <span class="ordernum"><a href="javascript:;" class="blue-link"><em>Order<br>#529425</em></a></span>
+                <span class="item">Item</span>
+                <span class="material">Material</span>
+                <span class="quantity">Quantity</span>
+                <span class="descriptions">Description</span>
+                <span class="total">Total</span>
+                <span class="action">Action</span>
+                <span class="factsheet"></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+            </ul>
+            <ul class="no">
+              <li class="title">
+                <span class="ordernum"><a href="javascript:;" class="blue-link"><em>Order<br>#529425</em></a></span>
+                <span class="item">Item</span>
+                <span class="material">Material</span>
+                <span class="quantity">Quantity</span>
+                <span class="descriptions">Description</span>
+                <span class="total">Total</span>
+                <span class="action">Action</span>
+                <span class="factsheet"></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+              <li>
+                <span class="ordernum"></span>
+                <span class="item">Filter</span>
+                <span class="material">Thin-Film Composite</span>
+                <span class="quantity">50 units</span>
+                <span class="descriptions">Membrane filter</span>
+                <span class="total">$ 1,245.67</span>
+                <span class="action"><a href="javascript:;"><i></i><em>MSDS</em></a></span>
+                <span class="factsheet"><a href="javascript:;"><i></i><em>Fact<br>Sheet</em></a></span>
+              </li>
+            </ul>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <!-- end .open-invoices-contents -->
+  </div>
+  <!-- end .contents -->
+</div>
+</body>
+</html> 

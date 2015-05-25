@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* -------------
+ * Radios
+ * ------------- */
+.jqTransformRadioWrapper {
+  float: left;
+  display:block;
+}
+.jqTransformRadio {
+  background: url(../i/forms/radio.png) no-repeat center top;
+  vertical-align: middle;
+  height: 18px;
+  width: 18px;
+  display:block;
+}
+
+/* -------------
+ * Checkboxes
+ * ------------- */
+span.jqTransformCheckboxWrapper{
+	display:block;
+	float:left;
+	margin-top:1px;
+	margin-right: 8px;
+}
+a.jqTransformCheckbox {
+	background: url(../i/forms/checkbox.png) no-repeat center top;
+	vertical-align: middle;
+	height: 18px;
+	width: 18px;
+	overflow: hidden;
+	display:block;/*display: -moz-inline-block;*/
+}
+
+/* -------------
+ * Checked - Used for both Radio and Checkbox
+ * ------------- */
+a.jqTransformChecked { background-position: center bottom;}
+
+/* -------------
+ * Selects
+ * ------------- */
+.selects-container {
+  font-family: "ge-inspira", Arial;
+  background: #fff;
+  font-size: 12px;
+  color: #636161;
+  margin: 0;
+}
+.selects-container .jqTransformSelectWrapper {
+  background:#fff;
+  position: relative;
+  height: 29px;
+  border: 1px solid #e0dfdf;
+  border-radius: 2px;
+}
+.selects-container .jqTransformSelectWrapper a.jqTransformSelectOpen {
+  background-position: -146px -763px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  width: 16px;
+  height: 16px;
+}
+.selects-container .jqTransformSelectWrapper div span {
+  float: none;
+  position: absolute;
+  white-space: nowrap;
+  text-indent: 10px;
+  height: 29px;
+  line-height: 29px;
+  overflow: hidden;
+  cursor: pointer;
+  margin:0;
+}
+.selects-container .jqTransformSelectWrapper ul {
+  position: absolute;
+  top: 27px;
+  left: -1px;
+  list-style: none;
+  background-color: #fff;
+  border: 0;
+  display: none;
+  text-indent: 10px;
+  border: 1px solid #e0dfdf;
+  margin: 0;
+  padding: 0;
+  height: 150px;
+  overflow: auto;
+  overflow-y: auto;
+  z-index: 1000;
+}
+.selects-container .jqTransformSelectWrapper ul a {
+  font-size: 12px;
+  color:#636161;
+  display: block;
+  text-decoration: none;
+  line-height: 27px;
+  margin-top: -1px;
+  padding-top: 1px;
+}
+.selects-container .jqTransformSelectWrapper ul a.selected {
+  background: #f5f5f5;
+}
+.selects-container .jqTransformSelectWrapper ul a:hover,
+.selects-container .jqTransformSelectWrapper ul a.selected:hover {
+  text-decoration: none;
+  background: #f5f5f5;
+}
+/* -------------
+ * Hidden - used to hide the original form elements
+ * ------------- */
+.jqTransformHidden {
+  display: none;
+}

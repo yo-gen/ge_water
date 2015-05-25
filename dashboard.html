@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta Tags -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no">
+  <title>dashboard</title>
+
+  <!-- Font CSS -->
+  <link href="css/font.css" type="text/css" rel="stylesheet" />
+  <!-- Bootstrap -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link href="css/screen.css" rel="stylesheet" />
+  <link href="css/jqtransform.css" rel="stylesheet" />
+  <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+  <!-- jQuery library -->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/jquery.jqtransform.js"></script>
+  <!-- Bootstrap -->
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/script.js"></script>
+</head>
+<body>
+<aside class="nav-aside">
+  <nav class="nav">
+    <ul>
+      <li class="current"><a href="dashboard.html" class="icons icon-dashboard"><span class="mains"><i></i><span>Dashboard</span></span></a></li>
+      <li><a href="javascript:;" class="icons icon-my-account has-sub-nav"><span class="mains"><i></i><span>My Account</span></span></a></li>
+      <li><a href="javascript:;" class="icons icon-my-projects"><span class="mains"><i></i><span>My Projects</span></span></a></li>
+      <li><a href="javascript:;" class="icons icon-my-cart"><span class="mains"><i></i><span>My Cart</span></span></a></li>
+      <li><a href="knowledge-base.html" class="icons icon-knowledge-base"><span class="mains"><i></i><span>Knowledge Base</span></span></a></li>
+      <li><a href="support.html" class="icons icon-support"><span class="mains"><i></i><span>Support</span></span></a></li>
+      <li><a href="login.html" class="icons icon-logout"><span class="mains"><i></i><span>Logout</span></span></a></li>
+    </ul>
+  </nav>
+  <nav>
+    <ul class="sub-nav hide">
+      <li><a href="my-account.html?tabName=order-history-contents">Order History</a></li>
+      <li><a href="my-account.html?tabName=payment-history-contents">Payment History</a></li>
+      <li><a href="my-account.html?tabName=open-invoices-contents">Open Invoices</a></li>
+      <li><a href="javascript:;">My Surveys</a></li>
+      <li><a href="javascript:;">Account Reps</a></li>
+      <li><a href="javascript:;">Personalization</a></li>
+      <li><a href="my-profile.html?tabName=my-notifications-contents">Notifications</a></li>
+      <li><a href="my-profile.html?tabName=contact-detail-contents">Contact Info</a></li>
+    </ul>
+  </nav>
+</aside>
+<!-- end .nav-aside --> 
+
+<div class="wrapper">
+  <header class="header">
+    <div class="mobile-header">
+      <a href="javascript:;" class="icon-btn-menu"></a>
+      <a href="javascript:;" class="icon-btn-search"></a>
+      <a href="javascript:;" class="icon-btn-alerts"><span class="red-round">3</span></a>
+      <h2 class="title-text">Dashboard</h2>
+    </div>
+    <!-- end .mobile-header -->
+    <div class="container-fluid">
+      <div class="row">
+      
+        <div class="col-xs-3 logo-box">
+          <div class="logo pull-left">
+            <span></span>
+          </div>
+          <div class="texts pull-left">
+            <h1>GE Power and Water</h1>
+            <p>Water and Process Technologies</p>
+          </div>
+        </div>
+        <!-- end .logo-box -->
+        
+        <div class="col-xs-6 search-box">
+          <div class="search-bar">
+            <span class="input-box"><input name="" type="text" placeholder="Search" class="search-input"></span>
+            <span class="input-tip-txt hide">Ultrapure and Drinking Water TOC Analyzers</span>
+            <a href="search-result.html" class="btn-search"></a>
+          </div>
+          <!-- end .search-bar -->
+          <div class="search-tip hide">
+            <div class="row">
+              <h3>Applications (1)</h3>
+              <p>
+                <span class="blue-link"><a href="javascript:;">Water Quality Monitoring and Testing</a></span>
+              </p>
+            </div>
+            <!-- end .row -->
+            <div class="row">
+              <h3>Products (1)</h3>
+              <p>
+                <span class="blue-link"><a href="javascript:;">Ultrapure and Drinking Water TOC Analyzers</a></span>
+              </p>
+            </div>
+            <!-- end .row -->
+            <div class="row">
+              <h3>Industry (2)</h3>
+              <p>
+                <span class="blue-link"><a href="javascript:;">Pharmaceutical Industry Solutions</a></span>
+                <span class="blue-link"><a href="javascript:;">Municipal Water Treatment Solutions</a></span>
+              </p>
+            </div>
+            <!-- end .row -->
+            <div class="row">
+              <h3>Transactions (3)</h3>
+              <p class="spacing-down">
+                <span class="blue-link"><a href="javascript:;">Order #123456</a></span>
+                <span class="blue-link"><a href="javascript:;">Invoice #0097476809</a></span>
+                <span class="blue-link"><a href="javascript:;">Shipment #123456</a></span>
+              </p>
+            </div>
+            <!-- end .row -->
+            <div class="btn-row">
+              <a href="search-result.html" class="orange-link">View More</a>
+            </div>
+            <!-- end .btn-row -->          
+          </div>
+          <!-- end .search-tip -->
+        </div>
+        <!-- end .search-box -->
+        
+        <div class="col-xs-3 user-box">
+          <div class="pull-right">
+            <div class="alerts pull-left">
+              <a href="javascript:;" class="icon-alerts"><span class="red-round">7</span><i></i></a>
+              <div class="alerts-contents hide">
+                <span class="arrow-up"></span>
+                <div class="boxs">
+                  <div class="row">
+                    <i class="red-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Shipment #0097476809</a></span> is late
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="row">
+                    <i class="orange-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="row">
+                    <i class="orange-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Order #12344</a></span> delayed
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="row">
+                    <i class="green-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="row">
+                    <i class="green-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="btn-row">
+                    <a href="javascript:;" class="orange-link view-more-alerts-button">View More</a>
+                  </div>
+                  <!-- end .btn-row --> 
+                </div>
+              </div>
+            <!-- end .alerts-contents -->
+            </div>
+            <!-- end .alerts -->
+            <div class="user pull-left">
+              <a href="my-profile.html" class="user-link-group">
+                <img src="i/portrait-40x40.png"  class="portrait-img pull-left" alt="portrait"/>
+                <span class="portrait-text pull-left">
+                  <span class="txt">Welcome</span>
+                  <span class="name">George</span>
+                </span>
+              </a>
+            </div>
+            <!-- end .user -->          
+          </div>
+        </div>
+        <!-- end .user-box -->
+        
+        <aside class="alerts-full-mode hide">
+          <h2 class="titles">
+            <strong class="pull-left">Alarms (7)</strong>
+            <a href="javascript:;" class="icon-close-btn pull-right"></a>
+          </h2>
+          <div class="boxs">
+            <div class="blue-bar">
+              <a href="javascript:;" class="arrow-down pull-right"><span class="txt">Latest</span><i></i></a>
+            </div>
+            <div class="scroll-box">
+              <div class="scroll-main">
+                <div class="row">
+                  <i class="red-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Shipment #0097476809</a></span> is late 
+                    <span class="gray-block">3m ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="orange-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span> 
+                    <span class="gray-block">45m ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="orange-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Order #12344</a></span> delayed
+                    <span class="gray-block">2h ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="green-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    <span class="gray-block">3h ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="green-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    <span class="gray-block">6h ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="red-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Shipment #0097476788</a></span> is late
+                    <span class="gray-block">Apr 26, 2015. 11:23 am</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="red-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Shipment #0097476765</a></span> is late 
+                    <span class="gray-block">Apr 26, 2015. 9:47 am</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- end .alerts-full-mode -->
+        
+      </div>
+    </div>
+  </header>
+  <!-- end .header -->
+  
+  <nav class="gray-nav-bar">
+    <ul>
+      <li class="width20">
+        <span>On Order: <a href="javascript:;" class="items_link">5 items</a></span><i class="spacing-border"></i> 
+        <nav  class="sub-gray-nav hide">     
+          <span class="arrow-up"></span>  
+          <ul>
+            <li><a href="javascript:;">Order #12345</a></li>
+            <li><a href="javascript:;">Order #12344</a></li>
+            <li><a href="javascript:;">Order #12343</a></li>
+            <li><a href="javascript:;">Order #12342</a></li>
+            <li><a href="javascript:;">Order #12341</a></li>
+          </ul>
+        </nav>
+      </li>
+      <li class="width28"><span>Next Delivery: <a href="javascript:;">Apr 27, 2015</a></span><i class="spacing-border"></i></li>
+      <li class="width28"><span>Open Balance: <a href="javascript:;">$75,432</a></span><i class="spacing-border"></i></li>
+      <li class="width24"><span>Active Cart: <a href="javascript:;">$120,000</a></span><i class="spacing-border"></i></li>
+    </ul> 
+  </nav>
+  <!-- end .gray-nav-bar -->
+  
+  <div class="contents up-top110">    
+    
+    <div class="titles">
+      <div class="boxs">
+        <h2>Dashboard</h2>
+        <nav class="tab-nav">
+          <ul>
+            <li class="current" data-tab-class="notifications-contents"><a href="javascript:;">Notifications</a></li>
+            <li data-tab-class=""><a href="javascript:;">Cases</a></li>
+            <li data-tab-class="news-contents"><a href="javascript:;">News<span class="red-round">2</span></a></li>
+            <li data-tab-class="chatter-contents"><a href="javascript:;">Chatter<span class="red-round">3</span></a></li>
+          </ul>
+        </nav>
+        <!-- end .tab-nav -->
+      </div>
+    </div>
+    <!-- end .titles -->
+    
+    <div class="notifications-contents tab-content-general">
+      <nav class="sub-nav-bar mobile-sub-nav-bar">
+        <div class="current-show"><a href="javascript:;">Shipments<i></i></a></div>
+        <ul>
+          <li class="current" data-sub-tab-class="shipments-contents"><a href="javascript:;">Shipments<i></i></a></li>
+          <li data-sub-tab-class="orders-contents"><a href="javascript:;">Orders<i></i></a></li>
+          <li data-sub-tab-class=""><a href="javascript:;">Open Invoices<i></i></a></li>
+        </ul>
+        <a href="javascript:;" class="arrow-down"><span class="txt">Active</span><i></i></a>
+      </nav>
+      <!-- end .sub-nav-bar -->
+      
+      <div class="shipments-contents sub-tab-content-general">
+        <dl class="data-table-contents">
+          <dt>
+            <span class="shipment">Shipment #</span>
+            <span class="status">Status</span>
+            <span class="carrler">Carrler</span>
+            <span class="expected">Expected Dellvery Date<a href="javascript:;" class="sorting-dwon-btn"></a></span>
+            <span class="track"></span>
+          </dt>
+          <dd>
+            <a href="javascript:;" class="mobile-icon-gray-arrow"></a>
+            <span class="shipment"><a href="javascript:;">0097476809</a></span>
+            <span class="mobile-status"><span class="text">Status</span><span class="status sec"><i></i></span></span>
+            <span class="mobile-carrler"><span class="text">Carrler</span><span class="carrler">FedEx</span></span>
+            <span class="mobile-edd"><span class="text">EDD</span><span class="expected">May 1, 2015</span></span>
+            <span class="track"><a href="javascript:;"><i></i>Track</a></span>
+          </dd>
+          <dd>
+            <a href="javascript:;" class="mobile-icon-gray-arrow"></a>
+            <span class="shipment"><a href="javascript:;">0097476807</a></span>
+            <span class="mobile-status"><span class="text">Status</span><span class="status fou"><i></i></span></span>
+            <span class="mobile-carrler"><span class="text">Carrler</span><span class="carrler">FedEx</span></span>
+            <span class="mobile-edd"><span class="text">EDD</span><span class="expected">Apr 30, 2015</span></span>
+            <span class="track"><a href="javascript:;"><i></i>Track</a></span>
+          </dd>
+          <dd>
+            <a href="javascript:;" class="mobile-icon-gray-arrow"></a>
+            <span class="shipment"><a href="javascript:;">0097476803</a></span>
+            <span class="mobile-status"><span class="text">Status</span><span class="status fou"><i></i></span></span>
+            <span class="mobile-carrler"><span class="text">Carrler</span><span class="carrler">UPS</span></span>
+            <span class="mobile-edd"><span class="text">EDD</span><span class="expected">Apr 29, 2015</span></span>
+            <span class="track"><a href="javascript:;"><i></i>Track</a></span>
+          </dd>
+          <dd>
+            <a href="javascript:;" class="mobile-icon-gray-arrow"></a>
+            <span class="shipment"><a href="javascript:;">0097476802</a></span>
+            <span class="mobile-status"><span class="text">Status</span><span class="status six"><i></i></span></span>
+            <span class="mobile-carrler"><span class="text">Carrler</span><span class="carrler">UPS</span></span>
+            <span class="mobile-edd"><span class="text">EDD</span><span class="expected">Apr 29, 2015</span></span>
+            <span class="track"><a href="javascript:;"><i></i>Track</a></span>
+          </dd>
+          <dd>
+            <a href="javascript:;" class="mobile-icon-gray-arrow"></a>
+            <span class="shipment"><a href="javascript:;">0097476791</a></span>
+            <span class="mobile-status"><span class="text">Status</span><span class="status six"><i></i></span></span>
+            <span class="mobile-carrler"><span class="text">Carrler</span><span class="carrler">UPS</span></span>
+            <span class="mobile-edd"><span class="text">EDD</span><span class="expected">Apr 29, 2015</span></span>
+            <span class="track"><a href="javascript:;"><i></i>Track</a></span>
+          </dd>
+        </dl>
+      </div>
+      <!-- end.shipments-contents -->
+      
+      <div class="orders-contents sub-tab-content-general hide">
+        <dl class="data-table-contents">
+          <dt>
+            <span class="order">Order #</span>
+            <span class="status">Status</span>
+            <span class="orderplaced">Order Placed<a href="javascript:;" class="sorting-dwon-btn"></a></span>
+            <span class="orderby">Ordered By</span>
+            <span class="type">Type</span>
+            <span class="ordertotal">Order Total</span>
+            <span class="edd">EDD</span>
+          </dt>
+          <dd>
+            <span class="order"><a href="javascript:">523467</a></span>
+            <span class="status sec"><i></i></span>
+            <span class="orderplaced">Apr 23, 2015<i></i></span>
+            <span class="orderby">Geogre Scott</span>
+            <span class="type">Digital</span>
+            <span class="ordertotal">$ 1,245.67</span>
+            <span class="edd">Apr 27, 2015</span>
+          </dd>
+          <dd>
+            <span class="order"><a href="javascript:">523462</a></span>
+            <span class="status thi"><i></i></span>
+            <span class="orderplaced">Apr 20, 2015<i></i></span>
+            <span class="orderby">John Smith</span>
+            <span class="type">Digital</span>
+            <span class="ordertotal">$ 2,543.12</span>
+            <span class="edd">Apr 24, 2015</span>
+          </dd>
+          <dd>
+            <span class="order"><a href="javascript:">523459</a></span>
+            <span class="status fou"><i></i></span>
+            <span class="orderplaced">Apr 19, 2015<i></i></span>
+            <span class="orderby">Anna Parker</span>
+            <span class="type">Digital</span>
+            <span class="ordertotal">$ 789.00</span>
+            <span class="edd">Apr 23, 2015</span>
+          </dd>
+          <dd>
+            <span class="order"><a href="javascript:">523455</a></span>
+            <span class="status fou"><i></i></span>
+            <span class="orderplaced">Apr 17, 2015<i></i></span>
+            <span class="orderby">Geogre Scott</span>
+            <span class="type">Digital</span>
+            <span class="ordertotal">$ 1,245.67</span>
+            <span class="edd">Apr 20, 2015</span>
+          </dd>
+          <dd>
+            <span class="order"><a href="javascript:">523455</a></span>
+            <span class="status six"><i></i></span>
+            <span class="orderplaced">Apr 17, 2015<i></i></span>
+            <span class="orderby">Geogre Scott</span>
+            <span class="type">Digital</span>
+            <span class="ordertotal">$ 1,245.67</span>
+            <span class="edd">Apr 20, 2015</span>
+          </dd>
+        </dl>
+      </div>
+      <!-- end.orders-contents -->
+      
+    </div>
+    <!-- end .notifications-contents -->
+    
+    <div class="news-contents tab-content-general hide">
+      <nav class="sub-nav-bar">
+        <ul>
+          <li class="current" data-sub-tab-class="ge-power-and-water-contents"><a href="javascript:;">GE Power and Water<i></i></a></li>
+          <li data-sub-tab-class=""><a href="javascript:;">Products<i></i></a></li>
+          <li class="disable-gray" data-sub-tab-class=""><a href="javascript:;">Industry<i></i></a></li>
+          <li class="disable-gray" data-sub-tab-class=""><a href="javascript:;">Trends<i></i></a></li>
+        </ul>
+      </nav>
+      <!-- end .sub-nav-bar -->
+        
+      <div class="ge-power-and-water-contents sub-tab-content-general">
+        <div class="boxs news-list">
+          <div class="scroll-box">
+            <div class="scroll-main">
+              <div class="row-info">
+                <div class="col-pic">
+                  <a href="javascript:;"><img src="i/news-photo1.jpg" alt="photo"/></a>
+                </div>
+                <!-- end .col-pic -->  
+                <div class="col-info">
+                  <h2><a href="javascript:;" class="blue-link">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h2>
+                  <h3>Apr 17, 2015</h3>
+                  <p>
+                    Praesent consectetur justo a diam iaculis nec hendrerit quam ultricies. Quisque luctus neque id mi pretium
+                    faucibus. Integer ipsum sem, luctus ut tempus vel, eleifend a arcu. Morbi pretium, nulla ut porta vestibulum, urpis 
+                    enim venenatis massa, id volutpat velit metus non urna.
+                  </p>
+                </div>
+                <!-- end .col-info --> 
+                <span class="clearfix"></span>
+              </div>
+              <!-- end .row-info -->  
+              <div class="row-info">
+                <div class="col-pic">
+                  <a href="javascript:;"><img src="i/news-photo2.jpg" alt="photo"/></a>
+                </div>
+                <!-- end .col-pic -->  
+                <div class="col-info">
+                  <h2><a href="javascript:;" class="blue-link">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h2>
+                  <h3>Apr 10, 2015</h3>
+                  <p>
+                    Praesent consectetur justo a diam iaculis nec hendrerit quam ultricies. Quisque luctus neque id mi pretium 
+                    faucibus. Integer ipsum sem, luctus ut tempus vel, eleifend a arcu. Morbi pretium, nulla ut porta vestibulum, turpis 
+                    enim venenatis massa, id volutpat velit metus non urna.
+                  </p>
+                </div>
+                <!-- end .col-info --> 
+                <span class="clearfix"></span>
+              </div>
+              <!-- end .row-info -->
+              <div class="row-info">
+                <div class="col-pic">
+                  <a href="javascript:;"><img src="i/news-photo3.jpg" alt="photo"/></a>
+                </div>
+                <!-- end .col-pic -->  
+                <div class="col-info">
+                  <h2><a href="javascript:;" class="blue-link">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h2>
+                  <h3>Apr 2, 2015</h3>
+                  <p>
+                    Praesent consectetur justo a diam iaculis nec hendrerit quam ultricies. Quisque luctus neque id mi pretium 
+                    faucibus. Integer ipsum sem, luctus ut tempus vel, eleifend a arcu. Morbi pretium, nulla ut porta vestibulum, turpis 
+                    enim venenatis massa, id volutpat velit metus non urna.
+                  </p>
+                </div>
+                <!-- end .col-info -->
+                <span class="clearfix"></span> 
+              </div>
+              <!-- end .row-info -->
+              <div class="row-info">
+                <div class="col-pic">
+                  <a href="javascript:;"><img src="i/news-photo4.jpg" alt="photo"/></a>
+                </div>
+                <!-- end .col-pic -->  
+                <div class="col-info">
+                  <h2><a href="javascript:;" class="blue-link">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h2>
+                  <h3>Mar 23, 2015</h3>
+                  <p>
+                    Praesent consectetur justo a diam iaculis nec hendrerit quam ultricies. Quisque luctus neque id mi pretium 
+                    faucibus. Integer ipsum sem, luctus ut tempus vel, eleifend a arcu. Morbi pretium, nulla ut porta vestibulum, turpis
+                     enim venenatis massa, id volutpat velit metus non urna.
+                  </p>
+                </div>
+                <!-- end .col-info --> 
+                <span class="clearfix"></span>
+              </div>
+              <!-- end .row-info -->  
+              <div class="row-info">
+                <div class="col-pic">
+                  <a href="javascript:;"><img src="i/news-photo4.jpg" alt="photo"/></a>
+                </div>
+                <!-- end .col-pic -->  
+                <div class="col-info">
+                  <h2><a href="javascript:;" class="blue-link">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h2>
+                  <h3>Mar 23, 2015</h3>
+                  <p>
+                    Praesent consectetur justo a diam iaculis nec hendrerit quam ultricies. Quisque luctus neque id mi pretium 
+                    faucibus. Integer ipsum sem, luctus ut tempus vel, eleifend a arcu. Morbi pretium, nulla ut porta vestibulum, turpis
+                     enim venenatis massa, id volutpat velit metus non urna.
+                  </p>
+                </div>
+                <!-- end .col-info --> 
+                <span class="clearfix"></span>
+              </div>
+              <!-- end .row-info --> 
+              <div class="row-info">
+                <div class="col-pic">
+                  <a href="javascript:;"><img src="i/news-photo4.jpg" alt="photo"/></a>
+                </div>
+                <!-- end .col-pic -->  
+                <div class="col-info">
+                  <h2><a href="javascript:;" class="blue-link">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h2>
+                  <h3>Mar 23, 2015</h3>
+                  <p>
+                    Praesent consectetur justo a diam iaculis nec hendrerit quam ultricies. Quisque luctus neque id mi pretium 
+                    faucibus. Integer ipsum sem, luctus ut tempus vel, eleifend a arcu. Morbi pretium, nulla ut porta vestibulum, turpis
+                     enim venenatis massa, id volutpat velit metus non urna.
+                  </p>
+                </div>
+                <!-- end .col-info --> 
+                <span class="clearfix"></span>
+              </div>
+              <!-- end .row-info --> 
+              <div class="row-info">
+                <div class="col-pic">
+                  <a href="javascript:;"><img src="i/news-photo4.jpg" alt="photo"/></a>
+                </div>
+                <!-- end .col-pic -->  
+                <div class="col-info">
+                  <h2><a href="javascript:;" class="blue-link">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h2>
+                  <h3>Mar 23, 2015</h3>
+                  <p>
+                    Praesent consectetur justo a diam iaculis nec hendrerit quam ultricies. Quisque luctus neque id mi pretium 
+                    faucibus. Integer ipsum sem, luctus ut tempus vel, eleifend a arcu. Morbi pretium, nulla ut porta vestibulum, turpis
+                     enim venenatis massa, id volutpat velit metus non urna.
+                  </p>
+                </div>
+                <!-- end .col-info --> 
+                <span class="clearfix"></span>
+              </div>
+              <!-- end .row-info --> 
+              <div class="row-info">
+                <div class="col-pic">
+                  <a href="javascript:;"><img src="i/news-photo4.jpg" alt="photo"/></a>
+                </div>
+                <!-- end .col-pic -->  
+                <div class="col-info">
+                  <h2><a href="javascript:;" class="blue-link">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h2>
+                  <h3>Mar 23, 2015</h3>
+                  <p>
+                    Praesent consectetur justo a diam iaculis nec hendrerit quam ultricies. Quisque luctus neque id mi pretium 
+                    faucibus. Integer ipsum sem, luctus ut tempus vel, eleifend a arcu. Morbi pretium, nulla ut porta vestibulum, turpis
+                     enim venenatis massa, id volutpat velit metus non urna.
+                  </p>
+                </div>
+                <!-- end .col-info --> 
+                <span class="clearfix"></span>
+              </div>
+              <!-- end .row-info -->    
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end .ge-power-and-water-contents -->
+        
+    </div>
+    <!-- end .news-contents -->
+    
+    <div class="chatter-contents tab-content-general hide">
+      <nav class="sub-nav-bar">
+        <ul>
+          <li class="current" data-sub-tab-class="most-recent-contents"><a href="javascript:;">Most Recent<i></i></a></li>
+          <li data-sub-tab-class=""><a href="javascript:;">Following<i></i></a></li>
+          <li data-sub-tab-class=""><a href="javascript:;">Trends<i></i></a></li>
+        </ul>
+      </nav>
+      <!-- end .sub-nav-bar -->
+        
+      <div class="most-recent-contents sub-tab-content-general">        
+        <div class="boxs chatter-list">
+          <div class="scroll-box">
+            <div class="scroll-main">
+              <div class="row-info">
+                <div class="col-image">
+                  <a href="javascript:;"><img src="i/chatter-pic1.png" alt="pic"/></a>
+                </div>
+                <!-- end .col-image -->  
+                <div class="col-info">
+                  <div class="col-info-text">
+                    <h2><a href="javascript:;">Anna Williams</a></h2>
+                    <p class="unread">Hi James, do you already check today shipment?</p>
+                    <span class="col-info-comment">
+                      <a href="javascript:;">0 comment</a>
+                      <span class="grey-color">Apr 28, 2015. 11:05 am</span>
+                    </span>
+                  </div>
+                  <!-- end .col-info-text --> 
+                </div>
+                <!-- end .col-info --> 
+                <div class="col-info-time">
+                  <p>3m ago</p>
+                  <a href="javascript:;" class="icon-return"><i></i></a>
+                </div>
+                <!-- end .col-info-time --> 
+              </div>
+              <!-- end .row-info -->   
+              <div class="row-info">
+                <div class="col-image">
+                  <a href="javascript:;"><img src="i/chatter-pic2.png" alt="pic"/></a>
+                </div>
+                <!-- end .col-image -->  
+                <div class="col-info">
+                  <div class="col-info-text">
+                    <h2><a href="javascript:;">Dann Glossing</a></h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                    <span class="col-info-comment">
+                      <a href="javascript:;">2 comments</a>
+                      <span class="grey-color">Apr 28, 2015. 10:05 am</span>
+                    </span>
+                  </div>
+                  <!-- end .col-info-text --> 
+                </div>
+                <!-- end .col-info --> 
+                <div class="col-info-time">
+                  <p>1h ago</p>
+                </div>
+                <!-- end .col-info-time --> 
+              </div>
+              <!-- end .row-info --> 
+              <div class="sub-row row-info">
+                <div class="col-image">
+                  <a href="javascript:;"><img src="i/chatter-pic3.png" alt="pic"/></a>
+                </div>
+                <!-- end .col-image -->  
+                <div class="col-info">
+                  <div class="col-info-text">
+                    <h2><a href="javascript:;">Me</a></h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco?</p>
+                    <span class="col-info-comment sub-grey-color">
+                      Apr 28, 2015. 10:06 am
+                    </span>
+                  </div>
+                  <!-- end .col-info-text --> 
+                </div>
+                <!-- end .col-info --> 
+                <div class="col-info-time">
+                  <p>15m ago</p>
+                </div>
+                <!-- end .col-info-time --> 
+              </div>
+              <!-- end .sub-row -->
+              <!-- end .row-info --> 
+              <div class="sub-row-next row-info">
+                <div class="col-image">
+                  <a href="javascript:;"><img src="i/chatter-pic4.png" alt="pic"/></a>
+                </div>
+                <!-- end .col-image -->  
+                <div class="col-info">
+                  <div class="col-info-text">
+                    <h2><a href="javascript:;">Dann Glossing</a></h2>
+                    <p class="unread">Praesent consectetur justo diam iaculis nec ultricies</p>
+                    <span class="col-info-comment sub-grey-color">
+                    Apr 28, 2015. 11:03 am
+                    </span>
+                  </div>
+                  <!-- end .col-info-text --> 
+                </div>
+                <!-- end .col-info --> 
+                <div class="col-info-time">
+                  <p>5m ago</p>
+                  <a href="javascript:;" class="icon-return"><i></i></a>
+                </div>
+                <!-- end .col-info-time --> 
+              </div>
+              <!-- end .sub-row -->  
+              <div class="row-info">
+                <div class="col-image">
+                  <a href="javascript:;"><img src="i/chatter-pic5.png" alt="pic"/></a>
+                </div>
+                <!-- end .col-image -->  
+                <div class="col-info">
+                  <div class="col-info-text">
+                    <h2><a href="javascript:;">James Gardner</a></h2>
+                    <p>Aenean facilisis quam ut lectus lobortis euismod</p>
+                    <span class="col-info-comment">
+                      <a href="javascript:;">3 comments</a>
+                      <span class="grey-color">Apr 28, 2015. 8:58 am</span>
+                    </span>
+                  </div>
+                  <!-- end .col-info-text --> 
+                </div>
+                <!-- end .col-info -->
+                <div class="col-info-time">
+                  <p>2h ago</p>
+                  <a href="javascript:;" class="icon-return"><i></i></a>
+                </div>
+                <!-- end .col-info-time -->  
+              </div>
+              <!-- end .row-info -->  
+              <div class="row-info">
+                <div class="col-image">
+                  <a href="javascript:;"><img src="i/chatter-pic5.png" alt="pic"/></a>
+                </div>
+                <!-- end .col-image -->  
+                <div class="col-info">
+                  <div class="col-info-text">
+                    <h2><a href="javascript:;">James Gardner</a></h2>
+                    <p>Aenean facilisis quam ut lectus lobortis euismod</p>
+                    <span class="col-info-comment">
+                      <a href="javascript:;">3 comments</a>
+                      <span class="grey-color">Apr 28, 2015. 8:58 am</span>
+                    </span>
+                  </div>
+                  <!-- end .col-info-text --> 
+                </div>
+                <!-- end .col-info -->
+                <div class="col-info-time">
+                  <p>2h ago</p>
+                  <a href="javascript:;" class="icon-return"><i></i></a>
+                </div>
+                <!-- end .col-info-time -->  
+              </div>
+              <!-- end .row-info -->  
+              <div class="row-info">
+                <div class="col-image">
+                  <a href="javascript:;"><img src="i/chatter-pic5.png" alt="pic"/></a>
+                </div>
+                <!-- end .col-image -->  
+                <div class="col-info">
+                  <div class="col-info-text">
+                    <h2><a href="javascript:;">James Gardner</a></h2>
+                    <p>Aenean facilisis quam ut lectus lobortis euismod</p>
+                    <span class="col-info-comment">
+                      <a href="javascript:;">3 comments</a>
+                      <span class="grey-color">Apr 28, 2015. 8:58 am</span>
+                    </span>
+                  </div>
+                  <!-- end .col-info-text --> 
+                </div>
+                <!-- end .col-info -->
+                <div class="col-info-time">
+                  <p>2h ago</p>
+                  <a href="javascript:;" class="icon-return"><i></i></a>
+                </div>
+                <!-- end .col-info-time -->  
+              </div>
+              <!-- end .row-info -->  
+              <div class="row-info">
+                <div class="col-image">
+                  <a href="javascript:;"><img src="i/chatter-pic5.png" alt="pic"/></a>
+                </div>
+                <!-- end .col-image -->  
+                <div class="col-info">
+                  <div class="col-info-text">
+                    <h2><a href="javascript:;">James Gardner</a></h2>
+                    <p>Aenean facilisis quam ut lectus lobortis euismod</p>
+                    <span class="col-info-comment">
+                      <a href="javascript:;">3 comments</a>
+                      <span class="grey-color">Apr 28, 2015. 8:58 am</span>
+                    </span>
+                  </div>
+                  <!-- end .col-info-text --> 
+                </div>
+                <!-- end .col-info -->
+                <div class="col-info-time">
+                  <p>2h ago</p>
+                  <a href="javascript:;" class="icon-return"><i></i></a>
+                </div>
+                <!-- end .col-info-time -->  
+              </div>
+              <!-- end .row-info -->  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end .most-recent-contents -->
+        
+    </div>
+    <!-- end .chatter-contents -->
+  </div>
+  <!-- end .contents -->
+</div>
+</body>
+</html> 

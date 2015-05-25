@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta Tags -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no">
+  <title>My Profile</title>
+
+  <!-- Font CSS -->
+  <link href="css/font.css" type="text/css" rel="stylesheet" />
+  <!-- Bootstrap -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link href="css/screen.css" rel="stylesheet" />
+  <link href="css/jqtransform.css" rel="stylesheet" />
+  <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+  <!-- jQuery library -->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/jquery.jqtransform.js"></script>
+  <!-- Bootstrap -->
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/script.js"></script>
+</head>
+<body>
+<aside class="nav-aside">
+  <nav class="nav">
+    <ul>      
+      <li><a href="dashboard.html" class="icons icon-dashboard"><span class="mains"><i></i><span>Dashboard</span></span></a></li>
+      <li><a href="javascript:;" class="icons icon-my-account has-sub-nav"><span class="mains"><i></i><span>My Account</span></span></a></li>
+      <li><a href="javascript:;" class="icons icon-my-projects"><span class="mains"><i></i><span>My Projects</span></span></a></li>
+      <li><a href="javascript:;" class="icons icon-my-cart"><span class="mains"><i></i><span>My Cart</span></span></a></li>
+      <li><a href="knowledge-base.html" class="icons icon-knowledge-base"><span class="mains"><i></i><span>Knowledge Base</span></span></a></li>
+      <li><a href="support.html" class="icons icon-support"><span class="mains"><i></i><span>Support</span></span></a></li>
+      <li><a href="login.html" class="icons icon-logout"><span class="mains"><i></i><span>Logout</span></span></a></li>
+    </ul>
+  </nav>
+  <nav>
+    <ul class="sub-nav hide">
+      <li><a href="my-account.html?tabName=order-history-contents">Order History</a></li>
+      <li><a href="my-account.html?tabName=payment-history-contents">Payment History</a></li>
+      <li><a href="my-account.html?tabName=open-invoices-contents">Open Invoices</a></li>
+      <li><a href="javascript:;">My Surveys</a></li>
+      <li><a href="javascript:;">Account Reps</a></li>
+      <li><a href="javascript:;">Personalization</a></li>
+      <li><a href="my-profile.html?tabName=my-notifications-contents">Notifications</a></li>
+      <li><a href="my-profile.html?tabName=contact-detail-contents">Contact Info</a></li>
+    </ul>
+  </nav>
+</aside>
+<!-- end .nav-aside -->
+
+<div class="wrapper">
+  <header class="header">
+    <div class="mobile-header">
+      <a href="javascript:;" class="icon-btn-menu"></a>
+      <a href="javascript:;" class="icon-btn-search"></a>
+      <a href="javascript:;" class="icon-btn-alerts"><span class="red-round">3</span></a>
+      <h2 class="title-text">Dashboard</h2>
+    </div>
+    <!-- end .mobile-header -->
+    <div class="container-fluid">
+      <div class="row">
+      
+        <div class="col-xs-3 logo-box">
+          <div class="logo pull-left">
+            <span></span>
+          </div>
+          <div class="texts pull-left">
+            <h1>GE Power and Water</h1>
+            <p>Water and Process Technologies</p>
+          </div>
+        </div>
+        <!-- end .logo-box -->
+        
+        <div class="col-xs-6 search-box">
+          <div class="search-bar">
+            <span class="input-box"><input name="" type="text" placeholder="Search" class="search-input"></span>
+            <span class="input-tip-txt hide">Ultrapure and Drinking Water TOC Analyzers</span>
+            <a href="search-result.html" class="btn-search"></a>
+          </div>
+          <!-- end .search-bar -->
+          <div class="search-tip hide">
+            <div class="row">
+              <h3>Applications (1)</h3>
+              <p>
+                <span class="blue-link"><a href="javascript:;">Water Quality Monitoring and Testing</a></span>
+              </p>
+            </div>
+            <!-- end .row -->
+            <div class="row">
+              <h3>Products (1)</h3>
+              <p>
+                <span class="blue-link"><a href="javascript:;">Ultrapure and Drinking Water TOC Analyzers</a></span>
+              </p>
+            </div>
+            <!-- end .row -->
+            <div class="row">
+              <h3>Industry (2)</h3>
+              <p>
+                <span class="blue-link"><a href="javascript:;">Pharmaceutical Industry Solutions</a></span>
+                <span class="blue-link"><a href="javascript:;">Municipal Water Treatment Solutions</a></span>
+              </p>
+            </div>
+            <!-- end .row -->
+            <div class="row">
+              <h3>Transactions (3)</h3>
+              <p class="spacing-down">
+                <span class="blue-link"><a href="javascript:;">Order #123456</a></span>
+                <span class="blue-link"><a href="javascript:;">Invoice #0097476809</a></span>
+                <span class="blue-link"><a href="javascript:;">Shipment #123456</a></span>
+              </p>
+            </div>
+            <!-- end .row -->
+            <div class="btn-row">
+              <a href="search-result.html" class="orange-link">View More</a>
+            </div>
+            <!-- end .btn-row -->          
+          </div>
+          <!-- end .search-tip -->
+        </div>
+        <!-- end .search-box -->
+        
+        <div class="col-xs-3 user-box">
+          <div class="pull-right">
+            <div class="alerts pull-left">
+              <a href="javascript:;" class="icon-alerts"><span class="red-round">7</span><i></i></a>
+              <div class="alerts-contents hide">
+                <span class="arrow-up"></span>
+                <div class="boxs">
+                  <div class="row">
+                    <i class="red-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Shipment #0097476809</a></span> is late
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="row">
+                    <i class="orange-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="row">
+                    <i class="orange-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Order #12344</a></span> delayed
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="row">
+                    <i class="green-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="row">
+                    <i class="green-border"></i>
+                    <p>
+                      <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    </p>
+                  </div>
+                  <!-- end .row -->
+                  <div class="btn-row">
+                    <a href="javascript:;" class="orange-link view-more-alerts-button">View More</a>
+                  </div>
+                  <!-- end .btn-row --> 
+                </div>
+              </div>
+              <!-- end .alerts-contents -->
+            </div>
+            <!-- end .alerts -->
+            <div class="user pull-left">
+              <a href="my-profile.html" class="user-link-group">
+                <img src="i/portrait-40x40.png"  class="portrait-img pull-left" alt="portrait"/>
+                <span class="portrait-text pull-left">
+                  <span class="txt">Welcome</span>
+                  <span class="name">George</span>
+                </span>
+              </a>
+            </div>
+            <!-- end .user -->          
+          </div>
+        </div>
+        <!-- end .user-box -->
+        
+        <aside class="alerts-full-mode hide">
+          <h2 class="titles">
+            <strong class="pull-left">Alarms (7)</strong>
+            <a href="javascript:;" class="icon-close-btn pull-right"></a>
+          </h2>
+          <div class="boxs">
+            <div class="blue-bar">
+              <a href="javascript:;" class="arrow-down pull-right"><span class="txt">Latest</span><i></i></a>
+            </div>
+            <div class="scroll-box">
+              <div class="scroll-main">
+                <div class="row">
+                  <i class="red-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Shipment #0097476809</a></span> is late 
+                    <span class="gray-block">3m ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="orange-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span> 
+                    <span class="gray-block">45m ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="orange-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Order #12344</a></span> delayed
+                    <span class="gray-block">2h ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="green-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    <span class="gray-block">3h ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="green-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Lorem Ipsum alarm notification</a></span>
+                    <span class="gray-block">6h ago</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="red-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Shipment #0097476788</a></span> is late
+                    <span class="gray-block">Apr 26, 2015. 11:23 am</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+                <div class="row">
+                  <i class="red-border"></i>
+                  <p>
+                    <span class="blue-link"><a href="javascript:;">Shipment #0097476765</a></span> is late 
+                    <span class="gray-block">Apr 26, 2015. 9:47 am</span>
+                  </p>
+                </div>
+                <!-- end .row -->
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- end .alerts-full-mode -->
+        
+      </div>
+    </div>
+  </header>
+  <!-- end .header -->
+  
+  <div class="contents">   
+    
+    <div class="titles">
+      <h2>My Profile</h2>
+      <nav class="tab-nav">
+        <ul>
+          <li class="current" data-tab-class="contact-detail-contents"><a href="javascript:;" class="width140">Contact Detail</a></li>
+          <li data-tab-class="my-notifications-contents"><a href="javascript:;" class="width140">My Notifications</a></li>
+        </ul>
+      </nav>
+      <!-- end .tab-nav -->
+    </div>
+    <!-- end .titles -->
+    
+    <div class="contact-detail-contents tab-content-general">
+      <div class="boxs">     
+        <div class="row-info">
+          <div class="col-title">Account Name:</div>
+          <div class="col-text">American Cargo Services. INC</div>
+        </div>
+        <!-- end .row-info -->
+        <div class="row-info">
+          <div class="col-title">Name:</div>
+          <div class="col-text">George Jameson</div>
+        </div>
+        <!-- end .row-info -->
+        <div class="row-info">
+          <div class="col-title">Title:</div>
+          <div class="col-text">Lorem Ipsum</div>
+        </div>
+        <!-- end .row-info -->
+        <div class="row-info">
+          <div class="col-title">Function:</div>
+          <div class="col-text">Consultant / Contractor</div>
+        </div>
+        <!-- end .row-info -->
+        <div class="row-info">
+          <div class="col-title">Mailing Address:</div>
+          <div class="col-text">
+            <p>203 NW 107th Ave A-22 C/O America Cargo Services</p>
+            <p>Doral, Florida 33172 - 2182</p>
+            <p> US</p>
+          </div>
+        </div>
+        <!-- end .row-info -->
+        <div class="row-info">
+          <div class="col-title">Custom Links:</div>
+          <div class="col-text"><a href="javascript:;" class="blue-links">Lorem Ipsum Dolor</a></div>
+        </div>
+        <!-- end .row-info -->
+        <div class="row-info">
+          <div class="col-phone">
+            <span class="col-phone-title">Phone:</span>
+            <a href="javascript:;" class="blue-links">555 123 4567</a>       
+          </div>
+          <!-- end .col-phone -->
+          <div class="col-ext">
+            <span class="col-ext-title">Ext:</span>123     
+          </div>
+          <!-- end .col-ext -->
+          <div class="col-mobile">
+            <span class="col-mobile-title">Mobile:</span>
+            <a href="javascript:;" class="blue-links">123</a>        
+          </div>
+          <!-- end .col-mobile -->
+        </div>
+        <!-- end .row-info -->
+        <div class="row-info">
+          <div class="col-title">Email:</div>
+          <div class="col-text"><a href="javascript:;" class="blue-links">georgej@americancargo.com</a></div>
+        </div>
+        <!-- end .row-info -->
+        <div class="btn-box">
+          <a href="javascript:;" class="orange-btn"><span>Edit</span></a>
+        </div>
+        <!-- .btn-box -->
+      </div>
+    </div>
+    <!-- end .contact-detail-contents -->
+    
+    <div class="my-notifications-contents tab-content-general hide">
+      <div class="forms-checkbox">
+        <div class="container-fluid">
+          <h3 class="titles">
+            <span class="txt pull-left">Notifications</span>
+            <a href="javascript:;" class="up-arrow pull-right"><i></i></a>
+          </h3>
+          <div class="row">
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>Change of Ship Date</label>
+                <input type="checkbox">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>Change of Tranport Time</label>
+                <input type="checkbox">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>Confirmed Orders</label>
+                <input type="checkbox" checked="checked">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>Shipped Orders</label>
+                <input type="checkbox" checked="checked">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>Delivered Orders</label>
+                <input type="checkbox">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+        
+          </div>
+          <!-- end .row -->
+          <h3 class="titles">
+            <span class="txt pull-left">Marketing Preferences</span>
+            <a href="javascript:;" class="up-arrow pull-right"><i></i></a>
+          </h3>
+          <div class="row">
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>OTC</label>
+                <input type="checkbox">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>Annual Meeting</label>
+                <input type="checkbox">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>VIP</label>
+                <input type="checkbox" checked="checked">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>FPS</label>
+                <input type="checkbox" checked="checked">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+          </div>
+          <!-- end .row -->
+          <h3 class="titles">
+            <span class="txt pull-left">Contact Preferences</span>
+            <a href="javascript:;" class="up-arrow pull-right"><i></i></a>
+          </h3>
+          <div class="row">
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>Do Not Call</label>
+                <input type="checkbox">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>Fax Opt Out</label>
+                <input type="checkbox">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>Email Opt Out</label>
+                <input type="checkbox" checked="checked">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>Mail Opt Out</label>
+                <input type="checkbox" checked="checked">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>Opt In</label>
+                <input type="checkbox">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+          </div>
+          <!-- end .row -->
+          <h3 class="titles">
+            <span class="txt pull-left">Support Language</span>
+            <a href="javascript:;" class="up-arrow pull-right"><i></i></a>
+          </h3>
+          <div class="row">
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>English</label>
+                <input type="checkbox" checked="checked">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>Deutsch</label>
+                <input type="checkbox">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>Chinese</label>
+                <input type="checkbox" checked="checked">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs">
+              <span class="form-container checkbox-outer">
+                <label>Mail Opt Out</label>
+                <input type="checkbox">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+            <div class="col-xs-4 checkbox-boxs green-switch">
+              <span class="form-container checkbox-outer">
+                <label>Opt In</label>
+                <input type="checkbox" checked="checked">
+              </span>
+            </div>
+            <!-- end .col-xs-4 -->
+          </div>
+          <!-- end .row -->
+        </div>
+      </div>
+      <!-- end .forms-checkbox -->
+    </div>
+    <!-- end .my-notifications-contents -->
+    
+  </div>
+  <!-- end .contents -->
+</div>
+</body>
+</html> 
